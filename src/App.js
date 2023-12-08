@@ -44,8 +44,8 @@ const App =()=> {
         </Routes>
         {/* Hello Aarsh Prajapati */}
         </BrowserRouter>
-       { btntop && <div data-bs-spy="scroll" data-bs-target="#top" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-        <a class="btn rounded-pill btn-floting btn-lg btn-primary position-fixed bottom-0" style={{right:'30px'}} href='#'  id="top" role="button">&#8593;</a>
+       { btntop && <div data-bs-spy="scroll" data-bs-target="#top" data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0">
+        <a className="btn rounded-pill btn-floting btn-lg btn-primary position-fixed bottom-0" style={{right:'30px'}} href='#'  id="top" role="button">&#8593;</a>
         </div>}
       </div>
     )

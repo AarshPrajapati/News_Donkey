@@ -42,7 +42,6 @@ document.title=`News Donkey - ${capitalizeFirstLetter(props.category)}`;
     let data= await fetch(url);
     let parsedata=await data.json();
     props.SetPrograss(70);
-    console.log(parsedata);
     setArticals(parsedata.articles);
     setTotalResults(parsedata.totalResults);
     setLoading(false);
@@ -56,7 +55,6 @@ const fetchMoreData = async() => {
     //setLoading(true)
     let data= await fetch(url);
     let parsedata=await data.json();
-    console.log(parsedata);
     setArticals(articals.concat(parsedata.articles))
     setPage(page+1)
    // setLoading(false)

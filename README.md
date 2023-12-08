@@ -1,3 +1,15 @@
+# News-Donkey
+
+This is the news app , which provide daily upto date news
+
+This App was created using Bootstrap,Css and React Js
+
+Data was fetched from the News API
+
+In App.js use let NewsAPI='97552d6312dd4cd3bd21a913d6b6317d'
+insted of let NewsAPI=process.env.REACT_APP_APIKEY
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
