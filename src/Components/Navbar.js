@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar =()=> {
     return (
       <div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                     {/* <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/> */}

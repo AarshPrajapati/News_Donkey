@@ -7,7 +7,6 @@ const NewsItems = (props)=> {
       <div>
         <div className="card h-100 mt-2" style={{}}>
        <div style={{position:'absolute', right:'0'}}>  <span className="badge rounded-pill bg-success">{Source}
-        {/* <span className="visually-hidden">unread messages</span> */}
         </span></div>
         <img src={Image} className="card-img-top" alt="..."/>
         <div className="card-body">

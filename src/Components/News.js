@@ -13,7 +13,6 @@ const [articals,setArticals]=useState([])
 const [loading,setLoading]=useState(false)
 const [page,setPage]=useState(1)
 const [totalResults,setTotalResults]=useState(0)
-// document.title=`News Donkey - ${capitalizeFirstLetter(props.category)}`;
 
 useEffect(()=>{
   // props.SetPrograss(0);
@@ -32,6 +31,7 @@ useEffect(()=>{
   //   // setState({articals:parsedata.articles,totalResults:parsedata.totalResults,loading:false})
   //   props.SetPrograss(100);
   Fetchdata(1);
+document.title=`News Donkey - ${capitalizeFirstLetter(props.category)}`;
 },[]);
 
  const Fetchdata=async(Page)=>{
@@ -70,7 +70,7 @@ const fetchMoreData = async() => {
     return ( 
       <div>
         <div className="container mt-4">
-          <h2 className='text-center' style={{margin: "35px 0px"}}>NewsDonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h2>
+          <h2 className='text-center' style={{margin: "35px 0px",marginTop:"90px"}}>NewsDonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h2>
           {loading && <Loading/>}
           <InfiniteScroll
             dataLength={articals.length}
